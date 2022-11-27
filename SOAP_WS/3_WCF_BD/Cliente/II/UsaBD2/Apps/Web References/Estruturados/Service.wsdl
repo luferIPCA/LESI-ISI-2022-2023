@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ipca.pt/isi" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.ipca.pt/isi" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Manipular dados estruturados</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ipca.pt/isi">
+      <s:element name="VariosCalculos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VariosCalculosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VariosCalculosResult" type="tns:Varios" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Varios">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Soma" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sub" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPessoas">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPessoasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPessoasResult" type="tns:ArrayOfPessoa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPessoa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Pessoa" nillable="true" type="tns:Pessoa" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Pessoa">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Idade" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ReverseString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="s" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReverseStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReverseStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateXMLFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="algo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateXMLFileResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VariosCalculosSoapIn">
+    <wsdl:part name="parameters" element="tns:VariosCalculos" />
+  </wsdl:message>
+  <wsdl:message name="VariosCalculosSoapOut">
+    <wsdl:part name="parameters" element="tns:VariosCalculosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPessoasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPessoas" />
+  </wsdl:message>
+  <wsdl:message name="GetPessoasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPessoasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReverseStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ReverseString" />
+  </wsdl:message>
+  <wsdl:message name="ReverseStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ReverseStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateXMLFileSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateXMLFile" />
+  </wsdl:message>
+  <wsdl:message name="CreateXMLFileSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateXMLFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="VariosCalculos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cálculo que devolve vários resultados</wsdl:documentation>
+      <wsdl:input message="tns:VariosCalculosSoapIn" />
+      <wsdl:output message="tns:VariosCalculosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPessoas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Informação sobre as pessoas</wsdl:documentation>
+      <wsdl:input message="tns:GetPessoasSoapIn" />
+      <wsdl:output message="tns:GetPessoasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inverte uma string...</wsdl:documentation>
+      <wsdl:input message="tns:ReverseStringSoapIn" />
+      <wsdl:output message="tns:ReverseStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateXMLFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cria um ficheiro XML</wsdl:documentation>
+      <wsdl:input message="tns:CreateXMLFileSoapIn" />
+      <wsdl:output message="tns:CreateXMLFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VariosCalculos">
+      <soap:operation soapAction="http://www.ipca.pt/isi/VariosCalculos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPessoas">
+      <soap:operation soapAction="http://www.ipca.pt/isi/GetPessoas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <soap:operation soapAction="http://www.ipca.pt/isi/ReverseString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateXMLFile">
+      <soap:operation soapAction="http://www.ipca.pt/isi/CreateXMLFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VariosCalculos">
+      <soap12:operation soapAction="http://www.ipca.pt/isi/VariosCalculos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPessoas">
+      <soap12:operation soapAction="http://www.ipca.pt/isi/GetPessoas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <soap12:operation soapAction="http://www.ipca.pt/isi/ReverseString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateXMLFile">
+      <soap12:operation soapAction="http://www.ipca.pt/isi/CreateXMLFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Manipular dados estruturados</wsdl:documentation>
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:51169/DadosEstruturados/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:51169/DadosEstruturados/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

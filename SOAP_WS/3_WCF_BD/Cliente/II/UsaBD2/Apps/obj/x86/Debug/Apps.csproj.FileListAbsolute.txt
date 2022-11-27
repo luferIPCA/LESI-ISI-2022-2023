@@ -1,0 +1,39 @@
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\bin\Debug\Apps.exe.config
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\bin\Debug\Apps.exe
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\bin\Debug\Apps.pdb
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\Apps.Form1.resources
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\Apps.Properties.Resources.resources
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\Apps.exe
+C:\Temp\ISI\WS\07-12-2011\Apps\Apps\obj\x86\Debug\Apps.pdb
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\bin\Debug\Apps.exe.config
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\Apps.exe
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\Apps.pdb
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\bin\Debug\Apps.exe
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\bin\Debug\Apps.pdb
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\Apps.Form1.resources
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\Apps.Properties.Resources.resources
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Temp\ISI\WS\12-12-2011\Apps\Apps\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\work\IPCA\2012-2013\Aulas\ISI\Material Pedagogico\Exercicios\Exercicios_Aula\Aula_02_12_2012\Bases de Dados\Apps\Apps\bin\Debug\Apps.exe.config
+D:\work\IPCA\2012-2013\Aulas\ISI\Material Pedagogico\Exercicios\Exercicios_Aula\Aula_02_12_2012\Bases de Dados\Apps\Apps\obj\x86\Debug\Apps.exe
+D:\work\IPCA\2012-2013\Aulas\ISI\Material Pedagogico\Exercicios\Exercicios_Aula\Aula_02_12_2012\Bases de Dados\Apps\Apps\obj\x86\Debug\Apps.pdb
+D:\work\IPCA\2013-2014\Aulas\ISI\Exercicios\WS\SOA_WS\Bases de Dados\Apps\Apps\bin\Debug\Apps.exe.config
+D:\work\IPCA\2013-2014\Aulas\ISI\Exercicios\WS\SOA_WS\Bases de Dados\Apps\Apps\obj\x86\Debug\Apps.exe
+D:\work\IPCA\2013-2014\Aulas\ISI\Exercicios\WS\SOA_WS\Bases de Dados\Apps\Apps\obj\x86\Debug\Apps.pdb
+H:\Aulas\2014-2015\ISI\Material Pedagogico\WS\Mais WS\SOA_WS\Bases de Dados\Apps\Apps\bin\Debug\Apps.exe.config
+H:\Aulas\2014-2015\ISI\Material Pedagogico\WS\Mais WS\SOA_WS\Bases de Dados\Apps\Apps\obj\x86\Debug\Apps.exe
+H:\Aulas\2014-2015\ISI\Material Pedagogico\WS\Mais WS\SOA_WS\Bases de Dados\Apps\Apps\obj\x86\Debug\Apps.pdb
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.csprojAssemblyReference.cache
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.Form1.resources
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.Properties.Resources.resources
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.csproj.GenerateResource.cache
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.pdb
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\bin\Debug\Apps.exe.config
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\bin\Debug\Apps.exe
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\bin\Debug\Apps.pdb
+C:\Temp\ISI\WS\Clientes\UsaBD2\Apps\obj\x86\Debug\Apps.exe

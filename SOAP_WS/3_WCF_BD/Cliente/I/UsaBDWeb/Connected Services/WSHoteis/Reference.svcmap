@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a9ab0905-d830-47ba-9da4-972dbeb5e69f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59966/DB.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DB.xsd" MetadataType="Schema" ID="46be10fb-36c2-4b00-a32d-ab3bc25e375c" SourceId="1" SourceUrl="http://localhost:59966/DB.svc?xsd=xsd0" />
+    <MetadataFile FileName="DB1.xsd" MetadataType="Schema" ID="d5d663a7-7fea-4566-a06c-6a1b9fa79dd4" SourceId="1" SourceUrl="http://localhost:59966/DB.svc?xsd=xsd1" />
+    <MetadataFile FileName="DB2.xsd" MetadataType="Schema" ID="a1edd42a-729b-4d53-b42f-d7939aba397e" SourceId="1" SourceUrl="http://localhost:59966/DB.svc?xsd=xsd2" />
+    <MetadataFile FileName="DB.wsdl" MetadataType="Wsdl" ID="2cfc4f0a-d756-4c0b-adb0-80390a1363e3" SourceId="1" SourceUrl="http://localhost:59966/DB.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,38 @@
+
+
+MySQL DataBase
+
+http://stackoverflow.com/questions/8362835/web-service-built-in-c-sharp-to-retrieve-data-from-mysql-database
+
+-----------------------
+
+PHP web Services
+http://www.codeproject.com/Articles/84345/Developing-SOAP-Web-Services-with-PHP-C
+http://www.sanity-free.org/125/php_webservices_and_csharp_dotnet_soap_clients.html
+
+
+-----------------------
+
+PHP and Restful Services
+https://www.youtube.com/watch?v=UciopWMTdUM
+http://blogs.niteshapte.com/2013-12-15-how-to-consume-rest-web-service-in-php.htm
+
+-----------------------
+
+
+Java and RESTful Services
+http://blogs.niteshapte.com/2013-11-08-how-to-consume-rest-web-service-in-java.htm
+
+-----------------------
+
+
+RESTful Services
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+
+
+-----------------------
+
+Large amount of data
+http://msdn.microsoft.com/en-us/library/aa529330.aspx
+
+-----------------------

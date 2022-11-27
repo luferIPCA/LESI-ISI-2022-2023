@@ -1,0 +1,30 @@
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\bin\Debug\UsaWCF_BD_WIN.exe.config
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\bin\Debug\UsaWCF_BD_WIN.exe
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\bin\Debug\UsaWCF_BD_WIN.pdb
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.csprojResolveAssemblyReference.cache
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.Form1.resources
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.Properties.Resources.resources
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.csproj.GenerateResource.Cache
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.exe
+C:\Temp\ISI\Clientes\UsaBD\UsaWCF_BD_WIN\obj\Debug\UsaWCF_BD_WIN.pdb
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\bin\Debug\UsaWCF_BD_WIN.exe.config
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\bin\Debug\UsaWCF_BD_WIN.exe
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\bin\Debug\UsaWCF_BD_WIN.pdb
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.csprojAssemblyReference.cache
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.Form1.resources
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.Properties.Resources.resources
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.csproj.GenerateResource.cache
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.exe
+C:\Temp\ISI\WS\Clientes\UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.pdb
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\bin\Debug\UsaWCF_BD_WIN.exe.config
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\bin\Debug\UsaWCF_BD_WIN.exe
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\bin\Debug\UsaWCF_BD_WIN.pdb
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.csprojAssemblyReference.cache
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.Form1.resources
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.Properties.Resources.resources
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.csproj.GenerateResource.cache
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.csproj.CoreCompileInputs.cache
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.exe
+D:\Temp\ISI- ESI\SOA\WCF Web Service\SOAP UsaBD\UsaBDWin\obj\Debug\UsaWCF_BD_WIN.pdb

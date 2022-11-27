@@ -1,0 +1,7 @@
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\bin\UsaBD.dll.config
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\bin\UsaBD.dll
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\bin\UsaBD.pdb
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBD.csprojResolveAssemblyReference.cache
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBD.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBD.dll
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBD.pdb

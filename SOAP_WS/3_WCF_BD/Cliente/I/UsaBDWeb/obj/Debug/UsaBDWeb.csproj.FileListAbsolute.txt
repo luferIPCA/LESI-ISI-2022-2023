@@ -1,0 +1,13 @@
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\bin\UsaBD.dll.config
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\bin\UsaBD.dll
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\bin\UsaBD.pdb
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBDWeb.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBD.dll
+C:\Temp\ISI\Clientes\UsaBD\UsaBD\obj\Debug\UsaBD.pdb
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\bin\UsaBD.dll.config
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\bin\UsaBD.dll
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\bin\UsaBD.pdb
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\obj\Debug\UsaBDWeb.csprojAssemblyReference.cache
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\obj\Debug\UsaBDWeb.csproj.CoreCompileInputs.cache
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\obj\Debug\UsaBD.dll
+D:\Temp\ISI- ESI\SOA\WCF Web Service\Clientes\SOAP UsaBD\I\UsaBDWeb\obj\Debug\UsaBD.pdb

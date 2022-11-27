@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ipca.pt/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.ipca.pt/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Serviços para Gerir uma Base de Dados</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ipca.pt/">
+      <s:import namespace="http://tempuri.org/Hoteis.xsd" />
+      <s:import schemaLocation="http://localhost:2129/DBWs/Service.asmx?schema=Hoteis" namespace="http://tempuri.org/Hoteis.xsd" />
+      <s:element name="GetAllHoteis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cidade" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllHoteisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllHoteisResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllHoteisLenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cidade" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="time" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllHoteisLentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllHoteisLentaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTourismData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hotelName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTourismDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTourismDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTourismData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hotelName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cidade" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTourismDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertTourismDataResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHoteis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomeHotel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHoteisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHoteisResult" type="tns:ArrayOfHotel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfHotel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Hotel" type="tns:Hotel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Hotel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cidade" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="capacidade" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getTurismoTypedDataSet">
+        <s:complexType />
+      </s:element>
+      <s:element name="getTurismoTypedDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTurismoTypedDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/Hoteis.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NomeBySigla">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sigla" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NomeBySiglaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NomeBySiglaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Número_x0020_de_x0020_Professores">
+        <s:complexType />
+      </s:element>
+      <s:element name="Número_x0020_de_x0020_ProfessoresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Número_x0020_de_x0020_ProfessoresResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sumários_x0020_por_x0020_Professor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProfName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sumários_x0020_por_x0020_ProfessorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sumários_x0020_por_x0020_ProfessorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addSumario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Prof" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sala" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addSumarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addSumarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delSumario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Prof" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sala" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delSumarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="delSumarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateSumario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Prof" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sala" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateSumarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateSumarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserAccess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserAccessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserAccessResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllHoteisSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllHoteis" />
+  </wsdl:message>
+  <wsdl:message name="GetAllHoteisSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllHoteisResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllHoteisLentaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllHoteisLenta" />
+  </wsdl:message>
+  <wsdl:message name="GetAllHoteisLentaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllHoteisLentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTourismDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getTourismData" />
+  </wsdl:message>
+  <wsdl:message name="getTourismDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getTourismDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertTourismDataSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertTourismData" />
+  </wsdl:message>
+  <wsdl:message name="InsertTourismDataSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertTourismDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHoteisSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHoteis" />
+  </wsdl:message>
+  <wsdl:message name="GetHoteisSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHoteisResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTurismoTypedDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:getTurismoTypedDataSet" />
+  </wsdl:message>
+  <wsdl:message name="getTurismoTypedDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:getTurismoTypedDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="NomeBySiglaSoapIn">
+    <wsdl:part name="parameters" element="tns:NomeBySigla" />
+  </wsdl:message>
+  <wsdl:message name="NomeBySiglaSoapOut">
+    <wsdl:part name="parameters" element="tns:NomeBySiglaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Número_x0020_de_x0020_ProfessoresSoapIn">
+    <wsdl:part name="parameters" element="tns:Número_x0020_de_x0020_Professores" />
+  </wsdl:message>
+  <wsdl:message name="Número_x0020_de_x0020_ProfessoresSoapOut">
+    <wsdl:part name="parameters" element="tns:Número_x0020_de_x0020_ProfessoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sumários_x0020_por_x0020_ProfessorSoapIn">
+    <wsdl:part name="parameters" element="tns:Sumários_x0020_por_x0020_Professor" />
+  </wsdl:message>
+  <wsdl:message name="Sumários_x0020_por_x0020_ProfessorSoapOut">
+    <wsdl:part name="parameters" element="tns:Sumários_x0020_por_x0020_ProfessorResponse" />
+  </wsdl:message>
+  <wsdl:message name="addSumarioSoapIn">
+    <wsdl:part name="parameters" element="tns:addSumario" />
+  </wsdl:message>
+  <wsdl:message name="addSumarioSoapOut">
+    <wsdl:part name="parameters" element="tns:addSumarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="delSumarioSoapIn">
+    <wsdl:part name="parameters" element="tns:delSumario" />
+  </wsdl:message>
+  <wsdl:message name="delSumarioSoapOut">
+    <wsdl:part name="parameters" element="tns:delSumarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateSumarioSoapIn">
+    <wsdl:part name="parameters" element="tns:updateSumario" />
+  </wsdl:message>
+  <wsdl:message name="updateSumarioSoapOut">
+    <wsdl:part name="parameters" element="tns:updateSumarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserAccessSoapIn">
+    <wsdl:part name="parameters" element="tns:UserAccess" />
+  </wsdl:message>
+  <wsdl:message name="UserAccessSoapOut">
+    <wsdl:part name="parameters" element="tns:UserAccessResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GereHoteisSoap">
+    <wsdl:operation name="GetAllHoteis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Selecciona todos os Hoteis</wsdl:documentation>
+      <wsdl:input message="tns:GetAllHoteisSoapIn" />
+      <wsdl:output message="tns:GetAllHoteisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHoteisLenta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Selecciona todos os Hoteis</wsdl:documentation>
+      <wsdl:input message="tns:GetAllHoteisLentaSoapIn" />
+      <wsdl:output message="tns:GetAllHoteisLentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTourismData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dados sobre um determinado Hotel</wsdl:documentation>
+      <wsdl:input message="tns:getTourismDataSoapIn" />
+      <wsdl:output message="tns:getTourismDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTourismData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Regista um Hotel</wsdl:documentation>
+      <wsdl:input message="tns:InsertTourismDataSoapIn" />
+      <wsdl:output message="tns:InsertTourismDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHoteis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Toda a informação de Hoteis num array de structs</wsdl:documentation>
+      <wsdl:input message="tns:GetHoteisSoapIn" />
+      <wsdl:output message="tns:GetHoteisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTurismoTypedDataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Toda a informação - via Typed DataSet</wsdl:documentation>
+      <wsdl:input message="tns:getTurismoTypedDataSetSoapIn" />
+      <wsdl:output message="tns:getTurismoTypedDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NomebySigla">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Devolve o nome do Docente</wsdl:documentation>
+      <wsdl:input name="NomeBySigla" message="tns:NomeBySiglaSoapIn" />
+      <wsdl:output name="NomeBySigla" message="tns:NomeBySiglaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Conta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Total com COUNT</wsdl:documentation>
+      <wsdl:input name="Número_x0020_de_x0020_Professores" message="tns:Número_x0020_de_x0020_ProfessoresSoapIn" />
+      <wsdl:output name="Número_x0020_de_x0020_Professores" message="tns:Número_x0020_de_x0020_ProfessoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProfSumarios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pesquisa Sumarios com parâmetros 'perigosos'</wsdl:documentation>
+      <wsdl:input name="Sumários_x0020_por_x0020_Professor" message="tns:Sumários_x0020_por_x0020_ProfessorSoapIn" />
+      <wsdl:output name="Sumários_x0020_por_x0020_Professor" message="tns:Sumários_x0020_por_x0020_ProfessorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addSumario">
+      <wsdl:input message="tns:addSumarioSoapIn" />
+      <wsdl:output message="tns:addSumarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="delSumario">
+      <wsdl:input message="tns:delSumarioSoapIn" />
+      <wsdl:output message="tns:delSumarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSumario">
+      <wsdl:input message="tns:updateSumarioSoapIn" />
+      <wsdl:output message="tns:updateSumarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserAccess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gere Autenticação</wsdl:documentation>
+      <wsdl:input message="tns:UserAccessSoapIn" />
+      <wsdl:output message="tns:UserAccessSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GereHoteisSoap" type="tns:GereHoteisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllHoteis">
+      <soap:operation soapAction="http://www.ipca.pt/GetAllHoteis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHoteisLenta">
+      <soap:operation soapAction="http://www.ipca.pt/GetAllHoteisLenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTourismData">
+      <soap:operation soapAction="http://www.ipca.pt/getTourismData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTourismData">
+      <soap:operation soapAction="http://www.ipca.pt/InsertTourismData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoteis">
+      <soap:operation soapAction="http://www.ipca.pt/GetHoteis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTurismoTypedDataSet">
+      <soap:operation soapAction="http://www.ipca.pt/getTurismoTypedDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NomebySigla">
+      <soap:operation soapAction="http://www.ipca.pt/NomeBySigla" style="document" />
+      <wsdl:input name="NomeBySigla">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="NomeBySigla">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Conta">
+      <soap:operation soapAction="http://www.ipca.pt/Número de Professores" style="document" />
+      <wsdl:input name="Número_x0020_de_x0020_Professores">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Número_x0020_de_x0020_Professores">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProfSumarios">
+      <soap:operation soapAction="http://www.ipca.pt/Sumários por Professor" style="document" />
+      <wsdl:input name="Sumários_x0020_por_x0020_Professor">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Sumários_x0020_por_x0020_Professor">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSumario">
+      <soap:operation soapAction="http://www.ipca.pt/addSumario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delSumario">
+      <soap:operation soapAction="http://www.ipca.pt/delSumario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSumario">
+      <soap:operation soapAction="http://www.ipca.pt/updateSumario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserAccess">
+      <soap:operation soapAction="http://www.ipca.pt/UserAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GereHoteisSoap12" type="tns:GereHoteisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllHoteis">
+      <soap12:operation soapAction="http://www.ipca.pt/GetAllHoteis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHoteisLenta">
+      <soap12:operation soapAction="http://www.ipca.pt/GetAllHoteisLenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTourismData">
+      <soap12:operation soapAction="http://www.ipca.pt/getTourismData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTourismData">
+      <soap12:operation soapAction="http://www.ipca.pt/InsertTourismData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoteis">
+      <soap12:operation soapAction="http://www.ipca.pt/GetHoteis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTurismoTypedDataSet">
+      <soap12:operation soapAction="http://www.ipca.pt/getTurismoTypedDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NomebySigla">
+      <soap12:operation soapAction="http://www.ipca.pt/NomeBySigla" style="document" />
+      <wsdl:input name="NomeBySigla">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="NomeBySigla">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Conta">
+      <soap12:operation soapAction="http://www.ipca.pt/Número de Professores" style="document" />
+      <wsdl:input name="Número_x0020_de_x0020_Professores">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Número_x0020_de_x0020_Professores">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProfSumarios">
+      <soap12:operation soapAction="http://www.ipca.pt/Sumários por Professor" style="document" />
+      <wsdl:input name="Sumários_x0020_por_x0020_Professor">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Sumários_x0020_por_x0020_Professor">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSumario">
+      <soap12:operation soapAction="http://www.ipca.pt/addSumario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delSumario">
+      <soap12:operation soapAction="http://www.ipca.pt/delSumario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSumario">
+      <soap12:operation soapAction="http://www.ipca.pt/updateSumario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserAccess">
+      <soap12:operation soapAction="http://www.ipca.pt/UserAccess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GereHoteis">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Serviços para Gerir uma Base de Dados</wsdl:documentation>
+    <wsdl:port name="GereHoteisSoap" binding="tns:GereHoteisSoap">
+      <soap:address location="http://localhost:2129/DBWs/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GereHoteisSoap12" binding="tns:GereHoteisSoap12">
+      <soap12:address location="http://localhost:2129/DBWs/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
