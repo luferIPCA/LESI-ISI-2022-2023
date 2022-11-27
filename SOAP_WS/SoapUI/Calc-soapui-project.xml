@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="178daeb2-414d-4a33-8752-a0ed6592d91c" activeEnvironment="Default" name="Calc" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="18893128-7bd3-433e-9bf8-2cd9cf2b7abc" wsaVersion="NONE" name="BasicHttpBinding_ICalcService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_ICalcService" soapVersion="1_1" anonymous="optional" definition="http://localhost:61415/Service.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="CreateWsdlDocumentationAction@report-directory">D:\Temp\SOA_TEMP\SOA\REST_WS_SoapUI</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:61415/Service.svc?wsdl"><con:part><con:url>http://localhost:61415/Service.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="CalcService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61415/Service.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://localhost:61415/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:61415/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICalcService_Sum_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sum"/>
+  </wsdl:message>
+  <wsdl:message name="ICalcService_Sum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ICalcService_SumAndSub_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumAndSub"/>
+  </wsdl:message>
+  <wsdl:message name="ICalcService_SumAndSub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumAndSubResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ICalcService">
+    <wsdl:operation name="Sum">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICalcService/Sum" message="tns:ICalcService_Sum_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICalcService/SumResponse" message="tns:ICalcService_Sum_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SumAndSub">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICalcService/SumAndSub" message="tns:ICalcService_SumAndSub_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/ICalcService/SumAndSubResponse" message="tns:ICalcService_SumAndSub_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICalcService" type="tns:ICalcService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Sum">
+      <soap:operation soapAction="http://tempuri.org/ICalcService/Sum" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SumAndSub">
+      <soap:operation soapAction="http://tempuri.org/ICalcService/SumAndSub" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalcService">
+    <wsdl:port name="BasicHttpBinding_ICalcService" binding="tns:BasicHttpBinding_ICalcService">
+      <soap:address location="http://localhost:61415/Service.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:61415/Service.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://localhost:61415/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/"/>
+  <xs:element name="Sum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="x" type="xs:int"/>
+        <xs:element minOccurs="0" name="y" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SumResult" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SumAndSub">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="x" type="xs:int"/>
+        <xs:element minOccurs="0" name="y" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SumAndSubResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SumAndSubResult" nillable="true" type="q1:SumSub" xmlns:q1="http://schemas.datacontract.org/2004/07/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:61415/Service.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/">
+  <xs:complexType name="SumSub">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Sub" type="xs:int"/>
+      <xs:element minOccurs="0" name="Sum" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SumSub" nillable="true" type="tns:SumSub"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:61415/Service.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:61415/Service.svc</con:endpoint></con:endpoints><con:operation id="172302b5-01c2-4c2a-b0f3-4ec0d4573df9" isOneWay="false" action="http://tempuri.org/ICalcService/Sum" name="Sum" bindingOperationName="Sum" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b6c57858-ef58-45f0-bda6-f94fa42004b2" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:61415/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Sum>\r
+         <!--Optional:-->\r
+         <tem:x>3</tem:x>\r
+         <!--Optional:-->\r
+         <tem:y>3</tem:y>\r
+      </tem:Sum>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICalcService/Sum"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dffbe9a6-b0b0-4b23-b36d-0c6c806881d7" isOneWay="false" action="http://tempuri.org/ICalcService/SumAndSub" name="SumAndSub" bindingOperationName="SumAndSub" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="607800af-829c-430e-8a67-c0aafa8d1a14" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:61415/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SumAndSub>\r
+         <!--Optional:-->\r
+         <tem:x>?</tem:x>\r
+         <!--Optional:-->\r
+         <tem:y>?</tem:y>\r
+      </tem:SumAndSub>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ICalcService/SumAndSub"/></con:call></con:operation></con:interface><con:testSuite id="fb909d29-07a9-4373-b25c-d6136c4a6f0f" name="BasicHttpBinding_ICalcService TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="31883f37-0ef0-4859-936a-b69969b9c2d7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Sum TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="a7507d5f-d1d1-43fb-84e1-2b3713094f9a" name="Sum"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_ICalcService</con:interface><con:operation>Sum</con:operation><con:request name="Sum" id="633e084c-db3c-4578-9e41-b72062fe2f7f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:61415/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Sum>\r
+         <!--Optional:-->\r
+         <tem:x>12</tem:x>\r
+         <!--Optional:-->\r
+         <tem:y>-3</tem:y>\r
+      </tem:Sum>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="bbbe9c7e-b681-4247-90df-dd43343a8cdf" name="Contains"><con:configuration><token>[0-9]*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="f382fb41-80ac-4982-9965-aabd2137f2e6" name="Script Assertion"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/ICalcService/Sum" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="f0fa4ba6-3717-4b0e-b7e2-866c911a82bf" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="cdb58a5c-e3f8-4afd-9e98-01bc0c2d7725" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SumAndSub TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="baa21646-60c0-4f3b-9a06-cfca4595e26b" name="SumAndSub"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_ICalcService</con:interface><con:operation>SumAndSub</con:operation><con:request name="SumAndSub" id="69b8f8c2-60fd-4169-896f-02924cf67030"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:61415/Service.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:SumAndSub>\r
+         <!--Optional:-->\r
+         <tem:x>?</tem:x>\r
+         <!--Optional:-->\r
+         <tem:y>?</tem:y>\r
+      </tem:SumAndSub>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/ICalcService/SumAndSub"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
