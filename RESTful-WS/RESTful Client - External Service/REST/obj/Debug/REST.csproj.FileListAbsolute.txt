@@ -1,0 +1,86 @@
+C:\Temp\ISI\REST\Clients\REST\bin\Debug\REST1.exe.config
+C:\Temp\ISI\REST\Clients\REST\bin\Debug\REST1.exe
+C:\Temp\ISI\REST\Clients\REST\bin\Debug\REST1.pdb
+C:\Temp\ISI\REST\Clients\REST\obj\Debug\REST.csprojAssemblyReference.cache
+C:\Temp\ISI\REST\Clients\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\REST\Clients\REST\obj\Debug\REST1.exe
+C:\Temp\ISI\REST\Clients\REST\obj\Debug\REST1.pdb
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\bin\Debug\REST1.exe.config
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\bin\Debug\REST1.exe
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\bin\Debug\REST1.pdb
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\obj\Debug\REST.csprojAssemblyReference.cache
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\obj\Debug\REST1.exe
+D:\IPCA\2020-2021\AULAS\ISI\Material Pedagógico\REST\Clients\REST\obj\Debug\REST1.pdb
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\REST1.exe.config
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\REST1.exe
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\REST1.pdb
+C:\Temp\ISI\Aulas\RESTFul\REST\obj\Debug\REST.csprojAssemblyReference.cache
+C:\Temp\ISI\Aulas\RESTFul\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\Aulas\RESTFul\REST\obj\Debug\REST1.exe
+C:\Temp\ISI\Aulas\RESTFul\REST\obj\Debug\REST1.pdb
+C:\Temp\ISI\Aulas\RESTFul\REST\obj\Debug\REST1.exe.config
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Text.Json.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Memory.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Text.Encodings.Web.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Numerics.Vectors.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Buffers.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Temp\ISI\Aulas\RESTFul\REST\obj\Debug\REST.csproj.CopyComplete
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\REST1.exe.config
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\REST1.exe
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\REST1.pdb
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Text.Json.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Memory.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Text.Encodings.Web.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Numerics.Vectors.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Buffers.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\obj\Debug\REST.csprojAssemblyReference.cache
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\obj\Debug\REST1.exe.config
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\obj\Debug\REST.csproj.CopyComplete
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\obj\Debug\REST1.exe
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\RESTFul\REST\obj\Debug\REST1.pdb
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\REST1.exe.config
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\REST1.exe
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\REST1.pdb
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Text.Json.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Memory.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Text.Encodings.Web.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Numerics.Vectors.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Buffers.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\obj\Debug\REST.csprojAssemblyReference.cache
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\obj\Debug\REST1.exe.config
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\obj\Debug\REST.csproj.CopyComplete
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\obj\Debug\REST1.exe
+C:\Temp\ISI\Aulas\Aula 2020-12-10 - RESTful Client\REST\obj\Debug\REST1.pdb
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\REST1.exe.config
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\REST1.exe
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\REST1.pdb
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\Newtonsoft.Json.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Text.Json.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Memory.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Text.Encodings.Web.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Numerics.Vectors.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Buffers.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\obj\Debug\REST.csproj.AssemblyReference.cache
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\obj\Debug\REST1.exe.config
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\obj\Debug\REST.csproj.CoreCompileInputs.cache
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\obj\Debug\REST.csproj.CopyComplete
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\obj\Debug\REST1.exe
+D:\Temp\ISI\SOA\RESTful Services\RESTful Client - External Service\REST\obj\Debug\REST1.pdb
