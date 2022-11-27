@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/5Ano.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE alunos SYSTEM "5Ano.dtd">
+
+    <alunos>
+    ...
+    </alunos>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT alunos (aluno)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT aluno (classificacao|media|turma|ano|nome)*>
+<!ATTLIST aluno
+    nprocesso CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nome (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ano (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT turma (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT media (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT classificacao (#PCDATA)>

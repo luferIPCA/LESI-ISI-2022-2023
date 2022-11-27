@@ -1,0 +1,375 @@
+[
+    {
+        "id": "5bfe9e9e304da357",
+        "type": "tab",
+        "label": "Generate Chart from MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "60a7f60891d20188",
+        "type": "mqtt in",
+        "z": "5bfe9e9e304da357",
+        "name": "Get from MQTT",
+        "topic": "sensor",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e86a8cc5303d7f0d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4847992bb8418f3b",
+        "type": "ui_gauge",
+        "z": "5bfe9e9e304da357",
+        "name": "Temperature Gauge",
+        "group": "9b20fd277bd197f0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "90",
+        "className": "",
+        "x": 600,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9db10de669356cd7",
+        "type": "change",
+        "z": "5bfe9e9e304da357",
+        "name": "Prepara Data do Chart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "msg.payload.Data[0].Temperature",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "4847992bb8418f3b",
+                "73886e1efcc45d65"
+            ]
+        ]
+    },
+    {
+        "id": "73886e1efcc45d65",
+        "type": "debug",
+        "z": "5bfe9e9e304da357",
+        "name": "Outputs",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7f979978b68cf477",
+        "type": "mqtt in",
+        "z": "5bfe9e9e304da357",
+        "name": "Get from MQTT",
+        "topic": "sensor",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5e3de42f.1e83bc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "0b2d3c148bea31d3",
+                "ab0b3934e41d78f8"
+            ]
+        ]
+    },
+    {
+        "id": "66ab0a5164230852",
+        "type": "change",
+        "z": "5bfe9e9e304da357",
+        "name": "Prepara Data do Chart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "msg.payload.Data[0].Temperature",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 760,
+        "wires": [
+            [
+                "8b071170a9048f8e",
+                "2b0502c88acd133c"
+            ]
+        ]
+    },
+    {
+        "id": "8b071170a9048f8e",
+        "type": "ui_chart",
+        "z": "5bfe9e9e304da357",
+        "name": "",
+        "group": "92a9cd27.99b9d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Current Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "10",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 620,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b2d3c148bea31d3",
+        "type": "json",
+        "z": "5bfe9e9e304da357",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 170,
+        "y": 660,
+        "wires": [
+            [
+                "66ab0a5164230852",
+                "d42a5be10863ba9c"
+            ]
+        ]
+    },
+    {
+        "id": "9d90477f534c9881",
+        "type": "comment",
+        "z": "5bfe9e9e304da357",
+        "name": "convert JSON String to Object",
+        "info": "",
+        "x": 140,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "dbe3a3238f6b279e",
+        "type": "comment",
+        "z": "5bfe9e9e304da357",
+        "name": "msg.payload.Data[0].Temperature",
+        "info": "",
+        "x": 420,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ab0b3934e41d78f8",
+        "type": "debug",
+        "z": "5bfe9e9e304da357",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d42a5be10863ba9c",
+        "type": "debug",
+        "z": "5bfe9e9e304da357",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2b0502c88acd133c",
+        "type": "debug",
+        "z": "5bfe9e9e304da357",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e86a8cc5303d7f0d",
+        "type": "mqtt-broker",
+        "z": null,
+        "name": "MQTT Server",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "test",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9b20fd277bd197f0",
+        "type": "ui_group",
+        "name": "Gauge Graph",
+        "tab": "d59b4552e9ac98d7",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5e3de42f.1e83bc",
+        "type": "mqtt-broker",
+        "name": "Localhost:1883",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "92a9cd27.99b9d",
+        "type": "ui_group",
+        "name": "Linear",
+        "tab": "61eb7f0529df64e0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d59b4552e9ac98d7",
+        "type": "ui_tab",
+        "name": "Sensors",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "61eb7f0529df64e0",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

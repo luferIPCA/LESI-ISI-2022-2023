@@ -1,0 +1,36 @@
+
+<!-- saved from url=(0153)https://delivery.swid.switchads.com/adserver/user_sync.php?node=http%3A%2F%2Fdelivery.g.switchadhub.com%2Fadserver%2Fuser_sync.php&do[sync]=1&do[share]=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><img src="./user_sync.php" width="1" height="1"><img src="./getuid(1)" width="1" height="1"><iframe seamless="seamless" style="border:none;padding:0px;margin:0px;width:0px;height:0px;position:relative;display:block;" frameborder="0" scrolling="no" scroll="no" src="./usersync.html"></iframe><img src="./img(1)" width="1" height="1"><img src="./sync(2)" width="1" height="1"><iframe seamless="seamless" style="border:none;padding:0px;margin:0px;width:0px;height:0px;position:relative;display:block;" frameborder="0" scrolling="no" scroll="no" src="./usermatch.html"></iframe><img src="./p-PKZhQpckCC_hH.gif" width="1" height="1"><img src="./sync.php" width="1" height="1"><img src="./rtset" width="1" height="1"><img src="./switchconcepts" width="1" height="1"><script>
+var swid = 'a922ad0f58db6b9dfcaa08ef07053f7a';
+if ('postMessage' in window && window.postMessage !== null) {
+    // all modern browsers support postMessage
+    try {
+        window.parent.postMessage(JSON.stringify({
+            switchconcepts: {
+                type: 'storeSwid',
+                data: {
+                    swid: swid
+                }
+            }
+        }), '*');
+    } catch(e) {
+        // no access to top domain, trafficked by third party, no first party sync available
+    }
+} else {
+    // Support for non-postMessage browsers (basically old IE)
+    try {
+        window.top.__switch_obj.storeSwid(swid, window.top.document);
+    } catch(e) {
+        // no access to top domain, trafficked by third party, no first party sync available
+    }
+
+    try{
+        // if we weren't delivered on the publisher site, send the message back to the frame we were delivered on
+        if(window.parent.parent !== window.top) {
+            window.parent.parent.__switch_obj.storeSwid(swid, window.top.document);
+        }
+    }catch(e){
+        // no access to grandparent, this shouldn't happen
+    }
+}
+</script></body></html>

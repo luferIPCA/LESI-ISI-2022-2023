@@ -1,0 +1,9 @@
+<!ELEMENT alunos (aluno+)>
+<!ELEMENT aluno (nome, ano, turma, media, classificacao)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT turma (#PCDATA)>
+<!ELEMENT media (#PCDATA)>
+<!ELEMENT classificacao (#PCDATA)>
+ 
+<!ATTLIST aluno nprocesso ID #REQUIRED>

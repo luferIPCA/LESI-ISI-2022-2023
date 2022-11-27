@@ -1,0 +1,11 @@
+
+Installation
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+https://blog.ajduke.in/2013/04/10/install-setup-and-start-mongodb-on-windows/
+
+M101P: MongoDB for Developers
+https://university.mongodb.com/courses/M101P/about?jmp=docs&_ga=1.32379833.681887149.1478028656
+
+
+Videos Kettle
+https://www.youtube.com/watch?v=ozWZZb3KMGw&list=PLg3ihnX5L7WmX8FKWDPGmXha82mEZpVtq

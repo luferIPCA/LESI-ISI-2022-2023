@@ -1,0 +1,205 @@
+[
+    {
+        "id": "25af4804332e337b",
+        "type": "tab",
+        "label": "Send Data to MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9949140b.86a398",
+        "type": "inject",
+        "z": "25af4804332e337b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "fca837ac.9017a8"
+            ]
+        ]
+    },
+    {
+        "id": "fca837ac.9017a8",
+        "type": "function",
+        "z": "25af4804332e337b",
+        "name": "",
+        "func": "var h = context.global.get('h')||0.008;\nvar a = context.global.get('a')||10;\nvar b = context.global.get('b')||28;\nvar c = context.global.get('c')||8/3;\nvar x = context.global.get('x')||2;\nvar y = context.global.get('y')||3;\nvar z = context.global.get('z')||4;\n\n\nx+=h*a*(y-x)\ny+=h*(x*(b-z)-y)\nz+=h*(x*y-c*z)\n\n\ncontext.global.set(\"x\",x);\ncontext.global.set(\"y\",y);\ncontext.global.set(\"z\",z);\nmsg.payload={};\nmsg.payload.x=x;\nmsg.payload.y=y;\nmsg.payload.z=z;\nmsg.topic=\"test\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "3d4c2049.b0a15",
+                "eaf80c.477637f8"
+            ]
+        ]
+    },
+    {
+        "id": "3d4c2049.b0a15",
+        "type": "debug",
+        "z": "25af4804332e337b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d5f1d889.28b538",
+        "type": "debug",
+        "z": "25af4804332e337b",
+        "name": "FromMQTT",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "eaf80c.477637f8",
+        "type": "function",
+        "z": "25af4804332e337b",
+        "name": "limit to max 3000 ",
+        "func": "var count = context.global.get('count') || 0;\ncount += 1;\ncontext.global.set('count',count);\nif (count <= 3000) {\n   return msg; \n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "70fe3130.35115"
+            ]
+        ]
+    },
+    {
+        "id": "6a564e81.91d17",
+        "type": "mqtt in",
+        "z": "25af4804332e337b",
+        "name": "GetTest",
+        "topic": "test",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5e53e761.1d6088",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 90,
+        "y": 420,
+        "wires": [
+            [
+                "d5f1d889.28b538"
+            ]
+        ]
+    },
+    {
+        "id": "70fe3130.35115",
+        "type": "mqtt out",
+        "z": "25af4804332e337b",
+        "name": "Send to MQTT",
+        "topic": "",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e86a8cc5303d7f0d",
+        "x": 700,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5e53e761.1d6088",
+        "type": "mqtt-broker",
+        "name": "MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e86a8cc5303d7f0d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "Pentaho",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "test",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

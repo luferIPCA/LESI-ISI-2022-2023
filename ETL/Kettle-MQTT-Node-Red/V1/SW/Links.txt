@@ -1,0 +1,18 @@
+
+How-To
+https://nodered.org/docs/getting-started/local
+
+Exemplo:
+https://www.linkedin.com/pulse/real-time-machine-learning-node-red-lumada-pentaho-elastic-monteil
+
+
+
+Pentahoo Market Place
+
+https://marketplace.hitachivantara.com/pentaho/
+
+
+MQTT Pubish-SUbscribe using Node_Red
+
+https://www.youtube.com/watch?v=XDrwgMSQrEY
+https://www.hackster.io/wawan-nugraha/mqtt-and-node-red-part-3-create-dashboard-node-red-0f5b8a

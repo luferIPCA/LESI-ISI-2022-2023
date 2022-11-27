@@ -1,0 +1,21 @@
+Download Mongodb
+https://www.mongodb.com/try/download/community
+
+
+Instalar Mongodb Compass
+
+--------------------
+
+Executar "mongodb Compass"
+
+ou
+mongod --dbpath c:\data\db --port 27017
+
+--------------------
+
+Visualizar no Mongodb Compass...em local
+
+--------------------
+
+References
+https://blog.ajduke.in/2013/04/10/install-setup-and-start-mongodb-on-windows/
