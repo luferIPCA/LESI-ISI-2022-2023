@@ -1,0 +1,10 @@
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.csprojAssemblyReference.cache
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.Form1.resources
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.Properties.Resources.resources
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.csproj.GenerateResource.cache
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.csproj.CoreCompileInputs.cache
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\bin\Debug\WCF_Client_WindowsForm.exe.config
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\bin\Debug\WCF_Client_WindowsForm.exe
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\bin\Debug\WCF_Client_WindowsForm.pdb
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.exe
+D:\Temp\ISI\SOA\WS_XML\WCF_WS\WCF_Client_WindowsForm\obj\Debug\WCF_Client_WindowsForm.pdb
