@@ -1,0 +1,10 @@
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\bin\Debug\XML_WS_WindowsForm_Client.exe.config
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\bin\Debug\XML_WS_WindowsForm_Client.exe
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\bin\Debug\XML_WS_WindowsForm_Client.pdb
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.csprojAssemblyReference.cache
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.Form1.resources
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.Properties.Resources.resources
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.csproj.GenerateResource.cache
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.csproj.CoreCompileInputs.cache
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.exe
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\XML_WS_WindowsForm_Client\obj\Debug\XML_WS_WindowsForm_Client.pdb

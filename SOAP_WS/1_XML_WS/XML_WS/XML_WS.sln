@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_WS", "XML_WS.csproj", "{CE5E3476-1CE5-4B15-8767-38204A487CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailValidator", "..\EmailValidator\EmailValidator.csproj", "{DE1C9E5C-C6CA-4CDA-AD26-EA62CE7145FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE5E3476-1CE5-4B15-8767-38204A487CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5E3476-1CE5-4B15-8767-38204A487CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5E3476-1CE5-4B15-8767-38204A487CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5E3476-1CE5-4B15-8767-38204A487CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1C9E5C-C6CA-4CDA-AD26-EA62CE7145FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1C9E5C-C6CA-4CDA-AD26-EA62CE7145FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1C9E5C-C6CA-4CDA-AD26-EA62CE7145FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1C9E5C-C6CA-4CDA-AD26-EA62CE7145FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76DED0A2-AA0F-4631-A641-B9047E6CF463}
+	EndGlobalSection
+EndGlobal

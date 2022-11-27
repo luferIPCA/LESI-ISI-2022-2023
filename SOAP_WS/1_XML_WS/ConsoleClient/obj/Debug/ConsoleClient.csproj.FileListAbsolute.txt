@@ -1,0 +1,14 @@
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\bin\Debug\ConsoleClient.exe.config
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\bin\Debug\ConsoleClient.exe
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\bin\Debug\ConsoleClient.pdb
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\obj\Debug\ConsoleClient.csprojAssemblyReference.cache
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\obj\Debug\ConsoleClient.csproj.CoreCompileInputs.cache
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\obj\Debug\ConsoleClient.exe
+D:\Temp\ISI\SOA\WS_XML\ConsoleClient\obj\Debug\ConsoleClient.pdb
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\bin\Debug\ConsoleClient.exe.config
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\bin\Debug\ConsoleClient.exe
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\bin\Debug\ConsoleClient.pdb
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\obj\Debug\ConsoleClient.csprojAssemblyReference.cache
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\obj\Debug\ConsoleClient.csproj.CoreCompileInputs.cache
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\obj\Debug\ConsoleClient.exe
+D:\Temp\ISI\SOA\WS_XML\1_XML_WS\ConsoleClient\obj\Debug\ConsoleClient.pdb

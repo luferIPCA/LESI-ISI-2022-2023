@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ipca.pt/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.ipca.pt/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vários Cálculos...</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ipca.pt/">
+      <s:element name="Sum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sub">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SumSoapIn">
+    <wsdl:part name="parameters" element="tns:Sum" />
+  </wsdl:message>
+  <wsdl:message name="SumSoapOut">
+    <wsdl:part name="parameters" element="tns:SumResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubSoapIn">
+    <wsdl:part name="parameters" element="tns:Sub" />
+  </wsdl:message>
+  <wsdl:message name="SubSoapOut">
+    <wsdl:part name="parameters" element="tns:SubResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FuncoesSoap">
+    <wsdl:operation name="Sum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Soma de ...</wsdl:documentation>
+      <wsdl:input message="tns:SumSoapIn" />
+      <wsdl:output message="tns:SumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sub">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Subtração de ...</wsdl:documentation>
+      <wsdl:input message="tns:SubSoapIn" />
+      <wsdl:output message="tns:SubSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FuncoesSoap" type="tns:FuncoesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Sum">
+      <soap:operation soapAction="http://www.ipca.pt/Sum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub">
+      <soap:operation soapAction="http://www.ipca.pt/Sub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FuncoesSoap12" type="tns:FuncoesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Sum">
+      <soap12:operation soapAction="http://www.ipca.pt/Sum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sub">
+      <soap12:operation soapAction="http://www.ipca.pt/Sub" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Funcoes">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vários Cálculos...</wsdl:documentation>
+    <wsdl:port name="FuncoesSoap" binding="tns:FuncoesSoap">
+      <soap:address location="https://localhost:44376/Services/Funcoes.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FuncoesSoap12" binding="tns:FuncoesSoap12">
+      <soap12:address location="https://localhost:44376/Services/Funcoes.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
