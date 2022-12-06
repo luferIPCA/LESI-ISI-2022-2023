@@ -59,7 +59,7 @@ namespace RESTWS
             string mode = "json";
             #endregion
 
-            #region WEATHER
+            #region WEATHER_1
             try
             {
                 #region Weather
@@ -143,13 +143,13 @@ namespace RESTWS
             }
             #endregion
 
-
-
-            //#endregion
+            #region WEATHER_2
+            
+            #endregion
         }
 
         #region Métodos auxiliares  XML  
-        
+
         /// <summary>
         /// Método para devolver o conteúdo de uma página em string
         /// </summary>
