@@ -41,7 +41,6 @@ namespace RESTAuth.Controllers
             { "test2", "password2" }
         };
 
-
         private readonly string tokenKey;
 
         #region ACEDER_APPSETTINGS.JSON

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EMti4N1DS388qt+GwYJbG0euS1X+fZPwjN3SxHhtSW0wHf2SgQiKxXCS0+TdkyPJEfYFJLry0cepYXeG35QT/Q==",
+  "dgSpecHash": "mZrBYwp6stP1iBFVR3/aSl/wfTC+zA5p3yK6/JOPG6AWJk/iCj10Wr7FMH/B/tSChnv3a3SdbRuCYMssqty0+g==",
   "success": true,
-  "projectFilePath": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API\\RESTful Service\\RESTServiceExample\\RESTServiceExample.csproj",
+  "projectFilePath": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API II\\RESTful Service\\RESTServiceExample\\RESTServiceExample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lufer\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\lufer\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",

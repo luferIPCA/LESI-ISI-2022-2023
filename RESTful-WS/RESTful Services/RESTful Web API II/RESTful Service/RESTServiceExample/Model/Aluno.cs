@@ -1,10 +1,8 @@
-﻿/**
- * 
+﻿/*
+ * lufer
+ * ISI
+ * RESTful Service .NET 5.0
  * */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace RESTServiceExample.Model
 {

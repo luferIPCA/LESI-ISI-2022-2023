@@ -1,7 +1,7 @@
 ﻿/*
  * lufer
  * ISI
- * RESTful Service
+ * RESTful Service .NET 5.0
  * */
 using RESTServiceExample.Model;
 using Microsoft.AspNetCore.Mvc;

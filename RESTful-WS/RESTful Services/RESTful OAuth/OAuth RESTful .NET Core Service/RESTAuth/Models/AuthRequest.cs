@@ -1,4 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿/*
+ * lufer
+ * ISI
+ * OAuth
+ * See https://dotnetcorecentral.com/blog/asp-net-core-authorization/
+ * */
+using System.ComponentModel.DataAnnotations;
 
 namespace RESTAuth.Models
 {

@@ -1,6 +1,7 @@
 ﻿/*
  * lufer
  * ISI
+ * OAuth
  * See https://dotnetcorecentral.com/blog/authentication-handler-in-asp-net-core/
  * */
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -11,7 +12,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 using NSwag;
 using NSwag.Generation.Processors.Security;
 using RESTAuth.Controllers;

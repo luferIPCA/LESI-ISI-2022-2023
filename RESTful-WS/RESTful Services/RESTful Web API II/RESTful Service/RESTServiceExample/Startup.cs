@@ -1,3 +1,8 @@
+/*
+ * lufer
+ * ISI
+ * RESTful Service .NET 5.0
+ * */
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,7 +28,7 @@ namespace RESTServiceExample
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "RESTServiceExample", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "RESTServiceExample (.NET 5.0)", Version = "v1" });
             });
             services.AddMvc().AddXmlSerializerFormatters(); //para suportar XML
             //MvcOptions.EnableEndpointRouting = false;

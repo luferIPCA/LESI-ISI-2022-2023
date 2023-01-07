@@ -37,7 +37,7 @@ namespace WebAPI
             services.AddSwaggerDocument(o =>
             o.PostProcess = document =>
             {
-                document.Info.Title = "Core API";
+                document.Info.Title = "Core Web API";
                 document.Info.Version = "v1";
                 document.Info.Description = "A simple ASP.NET Core web API";
                 document.Info.Contact = new NSwag.OpenApiContact    //está a ser usado o gestor NSwag

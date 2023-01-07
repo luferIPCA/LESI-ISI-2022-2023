@@ -1,3 +1,9 @@
+/*
+ * lufer
+ * ISI
+ * OAuth
+ * See https://dotnetcorecentral.com/blog/asp-net-core-authorization/
+ * */
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

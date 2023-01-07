@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * lufer
+ * ISI
+ * OAuth
+ * See https://dotnetcorecentral.com/blog/asp-net-core-authorization/
+ * */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

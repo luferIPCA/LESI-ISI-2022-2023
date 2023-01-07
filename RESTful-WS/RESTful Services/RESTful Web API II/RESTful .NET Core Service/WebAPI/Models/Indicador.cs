@@ -1,9 +1,9 @@
 ﻿/*
 *	<copyright file="Indicador.cs" company="IPCA">
-*		Copyright (c) 2020 All Rights Reserved
+*		Copyright (c) 2022 All Rights Reserved
 *	</copyright>
 * 	<author>lufer</author>
-*   <date>15/12/2020 </date>
+*   <date></date>
 *	<description></description>
 **/
 

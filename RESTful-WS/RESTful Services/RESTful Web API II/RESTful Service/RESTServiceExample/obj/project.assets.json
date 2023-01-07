@@ -586,19 +586,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lufer\\.nuget\\packages\\": {}
+    "C:\\Users\\lufer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API\\RESTful Service\\RESTServiceExample\\RESTServiceExample.csproj",
+      "projectUniqueName": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API II\\RESTful Service\\RESTServiceExample\\RESTServiceExample.csproj",
       "projectName": "RESTServiceExample",
-      "projectPath": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API\\RESTful Service\\RESTServiceExample\\RESTServiceExample.csproj",
+      "projectPath": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API II\\RESTful Service\\RESTServiceExample\\RESTServiceExample.csproj",
       "packagesPath": "C:\\Users\\lufer\\.nuget\\packages\\",
-      "outputPath": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API\\RESTful Service\\RESTServiceExample\\obj\\",
+      "outputPath": "D:\\Temp\\ISI\\RESTful-WS\\RESTful Services\\RESTful Web API II\\RESTful Service\\RESTServiceExample\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\lufer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

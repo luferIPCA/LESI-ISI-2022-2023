@@ -1,4 +1,8 @@
-﻿/**
+﻿
+/*
+ * lufer
+ * ISI
+ * RESTful Service .NET 5.0
  * Adaptado de https://github.com/renatogroffe/ASPNETCore2_XML_APIs
  * */
 

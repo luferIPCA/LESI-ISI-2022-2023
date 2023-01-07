@@ -1,14 +1,13 @@
 /*
 *	<copyright file="Program.cs" company="IPCA">
-*		Copyright (c) 2020 All Rights Reserved
+*		Copyright (c) 2022 All Rights Reserved
 *	</copyright>
 *	WebAPI RESTfful Services in ASP.NET Core
 * 	<author>lufer</author>
-*   <date>15/12/2020 10:34:15 AM</date>
+*   <date></date>
 *	<description></description>
 **/
 
-using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
